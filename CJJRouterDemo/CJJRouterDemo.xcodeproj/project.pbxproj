@@ -1,0 +1,712 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFA3105324799AE5002A2120 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA3105224799AE5002A2120 /* AppDelegate.m */; };
+		BFA3105C24799AE5002A2120 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA3105A24799AE5002A2120 /* Main.storyboard */; };
+		BFA3105E24799AE6002A2120 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFA3105D24799AE6002A2120 /* Assets.xcassets */; };
+		BFA3106124799AE6002A2120 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA3105F24799AE6002A2120 /* LaunchScreen.storyboard */; };
+		BFA3106424799AE6002A2120 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA3106324799AE6002A2120 /* main.m */; };
+		BFA3106E24799AE6002A2120 /* CJJRouterDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA3106D24799AE6002A2120 /* CJJRouterDemoTests.m */; };
+		BFA3107924799AE6002A2120 /* CJJRouterDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA3107824799AE6002A2120 /* CJJRouterDemoUITests.m */; };
+		BFA3108B24799B2B002A2120 /* CJJRouterFailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA3108724799B2B002A2120 /* CJJRouterFailVC.m */; };
+		BFA3108C24799B2B002A2120 /* CJJRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA3108824799B2B002A2120 /* CJJRouter.m */; };
+		BFA310A824799B41002A2120 /* ViewControllerOne.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA3108F24799B40002A2120 /* ViewControllerOne.m */; };
+		BFA310A924799B41002A2120 /* ViewControllerThree.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA3109124799B40002A2120 /* ViewControllerThree.m */; };
+		BFA310AA24799B41002A2120 /* ViewControllerFour.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA3109224799B40002A2120 /* ViewControllerFour.m */; };
+		BFA310AB24799B41002A2120 /* ViewControllerFive.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA3109424799B40002A2120 /* ViewControllerFive.m */; };
+		BFA310AC24799B41002A2120 /* ViewControlleMain.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA3109524799B40002A2120 /* ViewControlleMain.m */; };
+		BFA310AD24799B41002A2120 /* ViewControllerTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA3109A24799B40002A2120 /* ViewControllerTwo.m */; };
+		BFA310AE24799B41002A2120 /* MainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA3109F24799B40002A2120 /* MainModel.m */; };
+		BFA310AF24799B41002A2120 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA310A124799B40002A2120 /* MainView.m */; };
+		BFA310B024799B41002A2120 /* MainVCImg.png in Resources */ = {isa = PBXBuildFile; fileRef = BFA310A424799B40002A2120 /* MainVCImg.png */; };
+		BFA310B124799B41002A2120 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA310A624799B40002A2120 /* BaseNavigationController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFA3106A24799AE6002A2120 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFA3104624799AE5002A2120 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFA3104D24799AE5002A2120;
+			remoteInfo = CJJRouterDemo;
+		};
+		BFA3107524799AE6002A2120 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFA3104624799AE5002A2120 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFA3104D24799AE5002A2120;
+			remoteInfo = CJJRouterDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BFA3104E24799AE5002A2120 /* CJJRouterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJJRouterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFA3105124799AE5002A2120 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BFA3105224799AE5002A2120 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BFA3105B24799AE5002A2120 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFA3105D24799AE6002A2120 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFA3106024799AE6002A2120 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BFA3106224799AE6002A2120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFA3106324799AE6002A2120 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BFA3106924799AE6002A2120 /* CJJRouterDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CJJRouterDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFA3106D24799AE6002A2120 /* CJJRouterDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJJRouterDemoTests.m; sourceTree = "<group>"; };
+		BFA3106F24799AE6002A2120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFA3107424799AE6002A2120 /* CJJRouterDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CJJRouterDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFA3107824799AE6002A2120 /* CJJRouterDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJJRouterDemoUITests.m; sourceTree = "<group>"; };
+		BFA3107A24799AE6002A2120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFA3108724799B2B002A2120 /* CJJRouterFailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJJRouterFailVC.m; sourceTree = "<group>"; };
+		BFA3108824799B2B002A2120 /* CJJRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJJRouter.m; sourceTree = "<group>"; };
+		BFA3108924799B2B002A2120 /* CJJRouterFailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJJRouterFailVC.h; sourceTree = "<group>"; };
+		BFA3108A24799B2B002A2120 /* CJJRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJJRouter.h; sourceTree = "<group>"; };
+		BFA3108F24799B40002A2120 /* ViewControllerOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerOne.m; sourceTree = "<group>"; };
+		BFA3109024799B40002A2120 /* ViewControlleMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControlleMain.h; sourceTree = "<group>"; };
+		BFA3109124799B40002A2120 /* ViewControllerThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerThree.m; sourceTree = "<group>"; };
+		BFA3109224799B40002A2120 /* ViewControllerFour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerFour.m; sourceTree = "<group>"; };
+		BFA3109324799B40002A2120 /* ViewControllerTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerTwo.h; sourceTree = "<group>"; };
+		BFA3109424799B40002A2120 /* ViewControllerFive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerFive.m; sourceTree = "<group>"; };
+		BFA3109524799B40002A2120 /* ViewControlleMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControlleMain.m; sourceTree = "<group>"; };
+		BFA3109624799B40002A2120 /* ViewControllerThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerThree.h; sourceTree = "<group>"; };
+		BFA3109724799B40002A2120 /* ViewControllerOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerOne.h; sourceTree = "<group>"; };
+		BFA3109824799B40002A2120 /* ViewControllerFour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerFour.h; sourceTree = "<group>"; };
+		BFA3109924799B40002A2120 /* ViewControllerFive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerFive.h; sourceTree = "<group>"; };
+		BFA3109A24799B40002A2120 /* ViewControllerTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTwo.m; sourceTree = "<group>"; };
+		BFA3109C24799B40002A2120 /* UtilsMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
+		BFA3109E24799B40002A2120 /* MainModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainModel.h; sourceTree = "<group>"; };
+		BFA3109F24799B40002A2120 /* MainModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainModel.m; sourceTree = "<group>"; };
+		BFA310A124799B40002A2120 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		BFA310A224799B40002A2120 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
+		BFA310A424799B40002A2120 /* MainVCImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainVCImg.png; sourceTree = "<group>"; };
+		BFA310A624799B40002A2120 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		BFA310A724799B40002A2120 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		BFA310B224799B78002A2120 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFA3104B24799AE5002A2120 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFA3106624799AE6002A2120 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFA3107124799AE6002A2120 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFA3104524799AE5002A2120 = {
+			isa = PBXGroup;
+			children = (
+				BFA3105024799AE5002A2120 /* CJJRouterDemo */,
+				BFA3106C24799AE6002A2120 /* CJJRouterDemoTests */,
+				BFA3107724799AE6002A2120 /* CJJRouterDemoUITests */,
+				BFA3104F24799AE5002A2120 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFA3104F24799AE5002A2120 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFA3104E24799AE5002A2120 /* CJJRouterDemo.app */,
+				BFA3106924799AE6002A2120 /* CJJRouterDemoTests.xctest */,
+				BFA3107424799AE6002A2120 /* CJJRouterDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFA3105024799AE5002A2120 /* CJJRouterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BFA3108624799B2B002A2120 /* CJJRouter */,
+				BFA3108D24799B40002A2120 /* Modules */,
+				BFA3105124799AE5002A2120 /* AppDelegate.h */,
+				BFA3105224799AE5002A2120 /* AppDelegate.m */,
+				BFA3105A24799AE5002A2120 /* Main.storyboard */,
+				BFA3105D24799AE6002A2120 /* Assets.xcassets */,
+				BFA3105F24799AE6002A2120 /* LaunchScreen.storyboard */,
+				BFA3106224799AE6002A2120 /* Info.plist */,
+				BFA3106324799AE6002A2120 /* main.m */,
+				BFA310B224799B78002A2120 /* PrefixHeader.pch */,
+			);
+			path = CJJRouterDemo;
+			sourceTree = "<group>";
+		};
+		BFA3106C24799AE6002A2120 /* CJJRouterDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFA3106D24799AE6002A2120 /* CJJRouterDemoTests.m */,
+				BFA3106F24799AE6002A2120 /* Info.plist */,
+			);
+			path = CJJRouterDemoTests;
+			sourceTree = "<group>";
+		};
+		BFA3107724799AE6002A2120 /* CJJRouterDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BFA3107824799AE6002A2120 /* CJJRouterDemoUITests.m */,
+				BFA3107A24799AE6002A2120 /* Info.plist */,
+			);
+			path = CJJRouterDemoUITests;
+			sourceTree = "<group>";
+		};
+		BFA3108624799B2B002A2120 /* CJJRouter */ = {
+			isa = PBXGroup;
+			children = (
+				BFA3108A24799B2B002A2120 /* CJJRouter.h */,
+				BFA3108824799B2B002A2120 /* CJJRouter.m */,
+				BFA3108924799B2B002A2120 /* CJJRouterFailVC.h */,
+				BFA3108724799B2B002A2120 /* CJJRouterFailVC.m */,
+			);
+			path = CJJRouter;
+			sourceTree = "<group>";
+		};
+		BFA3108D24799B40002A2120 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BFA3108E24799B40002A2120 /* VC */,
+				BFA3109B24799B40002A2120 /* Macro */,
+				BFA3109D24799B40002A2120 /* Model */,
+				BFA310A024799B40002A2120 /* View */,
+				BFA310A324799B40002A2120 /* Resource */,
+				BFA310A524799B40002A2120 /* Base */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BFA3108E24799B40002A2120 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				BFA3109024799B40002A2120 /* ViewControlleMain.h */,
+				BFA3109524799B40002A2120 /* ViewControlleMain.m */,
+				BFA3109724799B40002A2120 /* ViewControllerOne.h */,
+				BFA3108F24799B40002A2120 /* ViewControllerOne.m */,
+				BFA3109324799B40002A2120 /* ViewControllerTwo.h */,
+				BFA3109A24799B40002A2120 /* ViewControllerTwo.m */,
+				BFA3109624799B40002A2120 /* ViewControllerThree.h */,
+				BFA3109124799B40002A2120 /* ViewControllerThree.m */,
+				BFA3109824799B40002A2120 /* ViewControllerFour.h */,
+				BFA3109224799B40002A2120 /* ViewControllerFour.m */,
+				BFA3109924799B40002A2120 /* ViewControllerFive.h */,
+				BFA3109424799B40002A2120 /* ViewControllerFive.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		BFA3109B24799B40002A2120 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				BFA3109C24799B40002A2120 /* UtilsMacros.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		BFA3109D24799B40002A2120 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFA3109E24799B40002A2120 /* MainModel.h */,
+				BFA3109F24799B40002A2120 /* MainModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFA310A024799B40002A2120 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BFA310A224799B40002A2120 /* MainView.h */,
+				BFA310A124799B40002A2120 /* MainView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BFA310A324799B40002A2120 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BFA310A424799B40002A2120 /* MainVCImg.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		BFA310A524799B40002A2120 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BFA310A724799B40002A2120 /* BaseNavigationController.h */,
+				BFA310A624799B40002A2120 /* BaseNavigationController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFA3104D24799AE5002A2120 /* CJJRouterDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFA3107D24799AE6002A2120 /* Build configuration list for PBXNativeTarget "CJJRouterDemo" */;
+			buildPhases = (
+				BFA3104A24799AE5002A2120 /* Sources */,
+				BFA3104B24799AE5002A2120 /* Frameworks */,
+				BFA3104C24799AE5002A2120 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CJJRouterDemo;
+			productName = CJJRouterDemo;
+			productReference = BFA3104E24799AE5002A2120 /* CJJRouterDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFA3106824799AE6002A2120 /* CJJRouterDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFA3108024799AE6002A2120 /* Build configuration list for PBXNativeTarget "CJJRouterDemoTests" */;
+			buildPhases = (
+				BFA3106524799AE6002A2120 /* Sources */,
+				BFA3106624799AE6002A2120 /* Frameworks */,
+				BFA3106724799AE6002A2120 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFA3106B24799AE6002A2120 /* PBXTargetDependency */,
+			);
+			name = CJJRouterDemoTests;
+			productName = CJJRouterDemoTests;
+			productReference = BFA3106924799AE6002A2120 /* CJJRouterDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BFA3107324799AE6002A2120 /* CJJRouterDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFA3108324799AE6002A2120 /* Build configuration list for PBXNativeTarget "CJJRouterDemoUITests" */;
+			buildPhases = (
+				BFA3107024799AE6002A2120 /* Sources */,
+				BFA3107124799AE6002A2120 /* Frameworks */,
+				BFA3107224799AE6002A2120 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFA3107624799AE6002A2120 /* PBXTargetDependency */,
+			);
+			name = CJJRouterDemoUITests;
+			productName = CJJRouterDemoUITests;
+			productReference = BFA3107424799AE6002A2120 /* CJJRouterDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFA3104624799AE5002A2120 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = jimmy;
+				TargetAttributes = {
+					BFA3104D24799AE5002A2120 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					BFA3106824799AE6002A2120 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = BFA3104D24799AE5002A2120;
+					};
+					BFA3107324799AE6002A2120 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = BFA3104D24799AE5002A2120;
+					};
+				};
+			};
+			buildConfigurationList = BFA3104924799AE5002A2120 /* Build configuration list for PBXProject "CJJRouterDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFA3104524799AE5002A2120;
+			productRefGroup = BFA3104F24799AE5002A2120 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFA3104D24799AE5002A2120 /* CJJRouterDemo */,
+				BFA3106824799AE6002A2120 /* CJJRouterDemoTests */,
+				BFA3107324799AE6002A2120 /* CJJRouterDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFA3104C24799AE5002A2120 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA3106124799AE6002A2120 /* LaunchScreen.storyboard in Resources */,
+				BFA3105E24799AE6002A2120 /* Assets.xcassets in Resources */,
+				BFA3105C24799AE5002A2120 /* Main.storyboard in Resources */,
+				BFA310B024799B41002A2120 /* MainVCImg.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFA3106724799AE6002A2120 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFA3107224799AE6002A2120 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFA3104A24799AE5002A2120 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA310AA24799B41002A2120 /* ViewControllerFour.m in Sources */,
+				BFA310AC24799B41002A2120 /* ViewControlleMain.m in Sources */,
+				BFA310A824799B41002A2120 /* ViewControllerOne.m in Sources */,
+				BFA310AD24799B41002A2120 /* ViewControllerTwo.m in Sources */,
+				BFA3108C24799B2B002A2120 /* CJJRouter.m in Sources */,
+				BFA3108B24799B2B002A2120 /* CJJRouterFailVC.m in Sources */,
+				BFA310AB24799B41002A2120 /* ViewControllerFive.m in Sources */,
+				BFA3105324799AE5002A2120 /* AppDelegate.m in Sources */,
+				BFA310AF24799B41002A2120 /* MainView.m in Sources */,
+				BFA310AE24799B41002A2120 /* MainModel.m in Sources */,
+				BFA3106424799AE6002A2120 /* main.m in Sources */,
+				BFA310A924799B41002A2120 /* ViewControllerThree.m in Sources */,
+				BFA310B124799B41002A2120 /* BaseNavigationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFA3106524799AE6002A2120 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA3106E24799AE6002A2120 /* CJJRouterDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFA3107024799AE6002A2120 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA3107924799AE6002A2120 /* CJJRouterDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFA3106B24799AE6002A2120 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFA3104D24799AE5002A2120 /* CJJRouterDemo */;
+			targetProxy = BFA3106A24799AE6002A2120 /* PBXContainerItemProxy */;
+		};
+		BFA3107624799AE6002A2120 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFA3104D24799AE5002A2120 /* CJJRouterDemo */;
+			targetProxy = BFA3107524799AE6002A2120 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BFA3105A24799AE5002A2120 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFA3105B24799AE5002A2120 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BFA3105F24799AE6002A2120 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFA3106024799AE6002A2120 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFA3107B24799AE6002A2120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BFA3107C24799AE6002A2120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFA3107E24799AE6002A2120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CJJRouterDemo/PrefixHeader.pch";
+				INFOPLIST_FILE = CJJRouterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy.cao.CJJRouterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFA3107F24799AE6002A2120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CJJRouterDemo/PrefixHeader.pch";
+				INFOPLIST_FILE = CJJRouterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy.cao.CJJRouterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BFA3108124799AE6002A2120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CJJRouterDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy.cao.CJJRouterDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CJJRouterDemo.app/CJJRouterDemo";
+			};
+			name = Debug;
+		};
+		BFA3108224799AE6002A2120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CJJRouterDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy.cao.CJJRouterDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CJJRouterDemo.app/CJJRouterDemo";
+			};
+			name = Release;
+		};
+		BFA3108424799AE6002A2120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CJJRouterDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy.cao.CJJRouterDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CJJRouterDemo;
+			};
+			name = Debug;
+		};
+		BFA3108524799AE6002A2120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CJJRouterDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy.cao.CJJRouterDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CJJRouterDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFA3104924799AE5002A2120 /* Build configuration list for PBXProject "CJJRouterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFA3107B24799AE6002A2120 /* Debug */,
+				BFA3107C24799AE6002A2120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFA3107D24799AE6002A2120 /* Build configuration list for PBXNativeTarget "CJJRouterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFA3107E24799AE6002A2120 /* Debug */,
+				BFA3107F24799AE6002A2120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFA3108024799AE6002A2120 /* Build configuration list for PBXNativeTarget "CJJRouterDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFA3108124799AE6002A2120 /* Debug */,
+				BFA3108224799AE6002A2120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFA3108324799AE6002A2120 /* Build configuration list for PBXNativeTarget "CJJRouterDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFA3108424799AE6002A2120 /* Debug */,
+				BFA3108524799AE6002A2120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFA3104624799AE5002A2120 /* Project object */;
+}
