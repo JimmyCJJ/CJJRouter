@@ -12,8 +12,8 @@
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 //导航栏高度
-#define JMStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
-#define JMSmallNavBarHeight 44.0
-#define JMNavBarHeight (JMStatusBarHeight + JMSmallNavBarHeight)
+#define CJJStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
+#define CJJSmallNavBarHeight 44.0
+#define CJJNavBarHeight (CJJStatusBarHeight + CJJSmallNavBarHeight)
 
 #endif /* UtilsMacros_h */
