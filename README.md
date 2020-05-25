@@ -5,7 +5,7 @@ CJJRouter实现了一句代码跳转任意控制器（可传参数），不需�
 
 - 手动管理
 ```
-直接把文件夹CJJRouter拖进工程即可
+下载demo，直接把demo里的文件夹CJJRouter拖进工程即可
 ```
 
 - CocoaPod管理
