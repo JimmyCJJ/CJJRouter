@@ -7,10 +7,14 @@ CJJRouter是一个单例类，导入到.pch文件中即可全局使用
 ### How To Use ?
 
 - 手动管理
+```
 直接把文件夹CJJRouter拖进工程即可
+```
 
 - CocoaPod管理
+```
 pod 'CJJRouter', '~> 1.0.0'
+```
 
 ### Demo Introduction
 
