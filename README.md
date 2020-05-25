@@ -30,7 +30,7 @@ CJJRouter是一个单例类，导入到.pch文件中即可全局使用
 
 ### 一句话跳转（不带参数）
 ```
-[self.navigationController pushViewController:CJJRouterCreatNormalVC(@"ViewControllerOne") animated:YES];
+[self.navigationController pushViewController:CJJRouterCreatVC(@"ViewControllerOne") animated:YES];
 ```
 
 ### 一句话跳转（带参数，固定普通方法）
