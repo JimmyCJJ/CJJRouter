@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A36D24F247B779500D830F9 /* ViewControllerCustomFailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A36D24E247B779500D830F9 /* ViewControllerCustomFailVC.m */; };
+		0A36D25E247B789B00D830F9 /* NSObject+MethodChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A36D254247B789B00D830F9 /* NSObject+MethodChange.m */; };
+		0A36D260247B789B00D830F9 /* UIViewController+Dealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A36D257247B789B00D830F9 /* UIViewController+Dealloc.m */; };
 		BFA3105324799AE5002A2120 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA3105224799AE5002A2120 /* AppDelegate.m */; };
 		BFA3105C24799AE5002A2120 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA3105A24799AE5002A2120 /* Main.storyboard */; };
 		BFA3105E24799AE6002A2120 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFA3105D24799AE6002A2120 /* Assets.xcassets */; };
@@ -46,6 +49,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A36D24D247B779500D830F9 /* ViewControllerCustomFailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerCustomFailVC.h; sourceTree = "<group>"; };
+		0A36D24E247B779500D830F9 /* ViewControllerCustomFailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerCustomFailVC.m; sourceTree = "<group>"; };
+		0A36D254247B789B00D830F9 /* NSObject+MethodChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MethodChange.m"; sourceTree = "<group>"; };
+		0A36D257247B789B00D830F9 /* UIViewController+Dealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Dealloc.m"; sourceTree = "<group>"; };
+		0A36D258247B789B00D830F9 /* NSObject+MethodChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MethodChange.h"; sourceTree = "<group>"; };
+		0A36D25D247B789B00D830F9 /* UIViewController+Dealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Dealloc.h"; sourceTree = "<group>"; };
 		BFA3104E24799AE5002A2120 /* CJJRouterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJJRouterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA3105124799AE5002A2120 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BFA3105224799AE5002A2120 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -112,6 +121,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A36D250247B788400D830F9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0A36D251247B789B00D830F9 /* MethodChange */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0A36D251247B789B00D830F9 /* MethodChange */ = {
+			isa = PBXGroup;
+			children = (
+				0A36D258247B789B00D830F9 /* NSObject+MethodChange.h */,
+				0A36D254247B789B00D830F9 /* NSObject+MethodChange.m */,
+				0A36D25D247B789B00D830F9 /* UIViewController+Dealloc.h */,
+				0A36D257247B789B00D830F9 /* UIViewController+Dealloc.m */,
+			);
+			path = MethodChange;
+			sourceTree = "<group>";
+		};
+		0A36D264247B7AC700D830F9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BFA3109D24799B40002A2120 /* Model */,
+				BFA310A024799B40002A2120 /* View */,
+				BFA3108E24799B40002A2120 /* VC */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		BFA3104524799AE5002A2120 = {
 			isa = PBXGroup;
 			children = (
@@ -181,10 +219,9 @@
 		BFA3108D24799B40002A2120 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				BFA3108E24799B40002A2120 /* VC */,
+				0A36D264247B7AC700D830F9 /* Main */,
+				0A36D250247B788400D830F9 /* Category */,
 				BFA3109B24799B40002A2120 /* Macro */,
-				BFA3109D24799B40002A2120 /* Model */,
-				BFA310A024799B40002A2120 /* View */,
 				BFA310A324799B40002A2120 /* Resource */,
 				BFA310A524799B40002A2120 /* Base */,
 			);
@@ -206,6 +243,8 @@
 				BFA3109224799B40002A2120 /* ViewControllerFour.m */,
 				BFA3109924799B40002A2120 /* ViewControllerFive.h */,
 				BFA3109424799B40002A2120 /* ViewControllerFive.m */,
+				0A36D24D247B779500D830F9 /* ViewControllerCustomFailVC.h */,
+				0A36D24E247B779500D830F9 /* ViewControllerCustomFailVC.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -384,14 +423,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A36D260247B789B00D830F9 /* UIViewController+Dealloc.m in Sources */,
 				BFA310AA24799B41002A2120 /* ViewControllerFour.m in Sources */,
 				BFA310AC24799B41002A2120 /* ViewControlleMain.m in Sources */,
 				BFA310A824799B41002A2120 /* ViewControllerOne.m in Sources */,
 				BFA310AD24799B41002A2120 /* ViewControllerTwo.m in Sources */,
 				BFA3108C24799B2B002A2120 /* CJJRouter.m in Sources */,
 				BFA3108B24799B2B002A2120 /* CJJRouterFailVC.m in Sources */,
+				0A36D25E247B789B00D830F9 /* NSObject+MethodChange.m in Sources */,
 				BFA310AB24799B41002A2120 /* ViewControllerFive.m in Sources */,
 				BFA3105324799AE5002A2120 /* AppDelegate.m in Sources */,
+				0A36D24F247B779500D830F9 /* ViewControllerCustomFailVC.m in Sources */,
 				BFA310AF24799B41002A2120 /* MainView.m in Sources */,
 				BFA310AE24799B41002A2120 /* MainModel.m in Sources */,
 				BFA3106424799AE6002A2120 /* main.m in Sources */,
@@ -568,6 +610,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CJJRouterDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = CJJRouterDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -585,6 +628,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CJJRouterDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = CJJRouterDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

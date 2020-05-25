@@ -3,6 +3,11 @@
 //  CAOJIANJIN
 //
 //  Created by JimmyCJJ on 2020/5/22.
+//  github   : https://github.com/JimmyCJJ
+//  wechat   : cjj_ohyeah
+//  E-mail   : 403327747@qq.com
+//  jianshu  : https://www.jianshu.com/u/fd9922e50c1a
+//  欢迎同行一起交流
 //  Copyright © 2020 CAOJIANJIN. All rights reserved.
 //
 
@@ -17,6 +22,10 @@ _Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
 Stuff; \
 _Pragma("clang diagnostic pop") \
 } while (0)
+
+@interface CJJRouter ()
+@property (nonatomic,strong) CJJRouterFailVC *defaultFailVC;
+@end
 
 @implementation CJJRouter
 
@@ -37,7 +46,10 @@ _Pragma("clang diagnostic pop") \
     UIViewController *vc = [NSClassFromString(vcName) new];
     if(!vc){
         NSLog(@"找不到该类，请检查类名！");
-        return [CJJRouterFailVC new];
+        if(self.failVC){
+            return self.failVC;
+        }
+        return self.defaultFailVC;
     }
     return vc;
 }
@@ -76,7 +88,10 @@ _Pragma("clang diagnostic pop") \
         
         if(!vc){
             NSLog(@"找不到该类，请检查类名！");
-            return [[CJJRouterFailVC alloc] init];
+            if(self.failVC){
+                return self.failVC;
+            }
+            return self.defaultFailVC;
         }
         
         if(![vc respondsToSelector:paramsSelector]){
@@ -94,6 +109,13 @@ _Pragma("clang diagnostic pop") \
     }
     
     return vc;
+}
+
+- (CJJRouterFailVC *)defaultFailVC{
+    if(!_defaultFailVC){
+        _defaultFailVC = [CJJRouterFailVC new];
+    }
+    return _defaultFailVC;
 }
 
 @end

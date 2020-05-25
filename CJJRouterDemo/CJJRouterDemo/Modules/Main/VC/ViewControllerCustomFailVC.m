@@ -1,18 +1,22 @@
 //
-//  ViewControllerTwo.m
+//  ViewControllerCustomFailVC.m
 //  CJJRouterDemo
 //
-//  Created by JimmyCJJ on 2020/5/23.
-//  Copyright © 2020 CAOJIANJIN. All rights reserved.
+//  Created by wangfeng on 2020/5/25.
+//  github   : https://github.com/JimmyCJJ
+//  wechat   : cjj_ohyeah
+//  E-mail   : 403327747@qq.com
+//  jianshu  : https://www.jianshu.com/u/fd9922e50c1a
+//  Copyright © 2020 jimmy. All rights reserved.
 //
 
-#import "ViewControllerTwo.h"
+#import "ViewControllerCustomFailVC.h"
 
-@interface ViewControllerTwo ()
+@interface ViewControllerCustomFailVC ()
 @property (nonatomic,strong) NSString *name;
 @end
 
-@implementation ViewControllerTwo
+@implementation ViewControllerCustomFailVC
 
 #pragma mark - life cycle
 

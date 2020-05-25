@@ -3,6 +3,11 @@
 //  CAOJIANJIN
 //
 //  Created by JimmyCJJ on 2020/5/22.
+//  github   : https://github.com/JimmyCJJ
+//  wechat   : cjj_ohyeah
+//  E-mail   : 403327747@qq.com
+//  jianshu  : https://www.jianshu.com/u/fd9922e50c1a
+//  欢迎同行一起交流
 //  Copyright © 2020 CAOJIANJIN. All rights reserved.
 //
 
@@ -10,7 +15,7 @@
 #import <UIKit/UIKit.h>
 
 //快速创建VC宏定义（不带参数）
-#define CJJRouterCreatNormalVC(vcName) [[CJJRouter sharedCJJRouter] creatVCWithName:vcName]
+#define CJJRouterCreatVC(vcName) [[CJJRouter sharedCJJRouter] creatVCWithName:vcName]
 
 //快速创建VC宏定义（普通方法传参）
 #define CJJRouterCreatNormalParamsVC(vcName,paramsDic) [[CJJRouter sharedCJJRouter] creatVCWithNormalMethodWithName:vcName params:paramsDic]
@@ -25,6 +30,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CJJRouter : NSObject
+
+/// 当命名错误找不到VC时，可设置该属性跳转到自定义VC（默认CJJRouterFailVC）
+@property (nonatomic,strong,nullable) UIViewController *failVC;
 
 /// 单例类方法
 + (CJJRouter *)sharedCJJRouter;

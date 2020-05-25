@@ -1,8 +1,8 @@
 //
-//  CJJRouterFailVC.h
-//  CAOJIANJIN
+//  UIViewController+Dealloc.h
+//  CJJRouterDemo
 //
-//  Created by JimmyCJJ on 2020/5/22.
+//  Created by JimmyCJJ on 2020/2/19.
 //  github   : https://github.com/JimmyCJJ
 //  wechat   : cjj_ohyeah
 //  E-mail   : 403327747@qq.com
@@ -11,11 +11,15 @@
 //  Copyright © 2020 CAOJIANJIN. All rights reserved.
 //
 
+
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CJJRouterFailVC : UIViewController
+@interface UIViewController (Dealloc)
+
+
+
 
 @end
 
