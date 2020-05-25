@@ -1,13 +1,7 @@
 # CJJRouter
 CJJRouter实现了一句代码跳转任意控制器（可传参数），不需要再引用头文件，减少耦合和依赖，觉得好用的话给个star哦
 
-### CJJRouter Introduction
-CJJRouter是一个单例类，导入到.pch文件中即可全局使用
-```
-#import <CJJRouter.h>
-```
-
-### How To Use ?
+### How To Use CJJRouter?
 
 - 手动管理
 ```
@@ -17,6 +11,13 @@ CJJRouter是一个单例类，导入到.pch文件中即可全局使用
 - CocoaPod管理
 ```
 pod 'CJJRouter', '~> 1.0.0'
+```
+
+
+### CJJRouter Introduction
+CJJRouter是一个单例类，导入到.pch文件中即可全局使用
+```
+#import <CJJRouter.h>
 ```
 
 ### Demo Introduction
