@@ -3,6 +3,9 @@ CJJRouter实现了一句代码跳转任意控制器（可传参数），不需�
 
 ### CJJRouter Introduction
 CJJRouter是一个单例类，导入到.pch文件中即可全局使用
+```
+#import <CJJRouter.h>
+```
 
 ### How To Use ?
 
