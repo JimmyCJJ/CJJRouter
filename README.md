@@ -52,3 +52,5 @@ CJJRouter是一个单例类，导入到.pch文件中即可全局使用
 ```
 [self.navigationController pushViewController:CJJRouterCreatParamsVC(@"ViewControllerFive", @{@"name":@"我是一个带参数的控制器（Custom InitMethod）"}, @"initWithCustomParams:", YES) animated:YES];
 ```
+
+简书地址 https://www.jianshu.com/p/d5cb59908a0a
