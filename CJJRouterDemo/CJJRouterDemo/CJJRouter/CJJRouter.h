@@ -24,15 +24,12 @@
 #define CJJRouterCreatInitParamsVC(vcName,paramsDic) [[CJJRouter sharedCJJRouter] creatVCWithInitMethodWithName:vcName params:paramsDic]
 
 //快速创建VC宏定义（自定义方法传参）
-#define CJJRouterCreatParamsVC(vcName,paramsDic,selectorName,isCustom)\
-[[CJJRouter sharedCJJRouter] creatVCWithName:vcName params:paramsDic paramsSelectorName:selectorName isCustomInitMethod:isCustom]
+#define CJJRouterCreatParamsVC(vcName,paramsDic,selectorName,isCustomInit)\
+[[CJJRouter sharedCJJRouter] creatVCWithName:vcName params:paramsDic paramsSelectorName:selectorName isCustomInitMethod:isCustomInit]
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CJJRouter : NSObject
-
-/// 当命名错误找不到VC时，可设置该属性跳转到自定义VC（默认CJJRouterFailVC）
-@property (nonatomic,strong,nullable) UIViewController *failVC;
 
 /// 单例类方法
 + (CJJRouter *)sharedCJJRouter;
@@ -62,6 +59,21 @@ NS_ASSUME_NONNULL_BEGIN
                                params:(NSDictionary *)paramsMuDic
                    paramsSelectorName:(NSString * )paramsSelectorName
                    isCustomInitMethod:(BOOL)isCustomInitMethod;
+
+#pragma mark - other
+
+/// 自定义FailVC，当命名错误找不到VC时，可通过该方法设置默认的控制器（默认CJJRouterFailVC）
+/// @param failVCName vc的名字
+/// @param failSelectorName 用来初始化参数的方法
+/// @param failParams 参数列表（可传NSDictionary/NSMutableDictionary）
+/// @param isFailCustomInitMethod 是否自定义初始化方法 默认NO，若为YES，则failSelectorName必须为自定义的init方法。若failSelectorName为nil，此参数无效。
+- (void)creatFailVCWithName:(NSString *)failVCName
+           failSelectorName:(NSString * __nullable)failSelectorName
+                 failParams:(NSDictionary * __nullable)failParams
+         isCustomInitMethod:(BOOL)isFailCustomInitMethod;
+
+/// 重置FailVC
+- (void)resetFailVC;
 
 @end
 

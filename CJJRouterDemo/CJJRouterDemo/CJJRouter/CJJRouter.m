@@ -25,6 +25,12 @@ _Pragma("clang diagnostic pop") \
 
 @interface CJJRouter ()
 @property (nonatomic,strong) CJJRouterFailVC *defaultFailVC;
+
+@property (nonatomic,copy,nullable) NSString *failVC;
+@property (nonatomic,copy,nullable) NSDictionary *failParmas;
+@property (nonatomic,copy,nullable) NSString *failSelectorName;
+@property (nonatomic,assign) BOOL isFailCustomInitMethod;
+
 @end
 
 @implementation CJJRouter
@@ -44,12 +50,9 @@ _Pragma("clang diagnostic pop") \
 
 - (UIViewController *)creatVCWithName:(NSString *)vcName{
     UIViewController *vc = [NSClassFromString(vcName) new];
-    if(!vc){
-        NSLog(@"找不到该类，请检查类名！");
-        if(self.failVC){
-            return self.failVC;
-        }
-        return self.defaultFailVC;
+    UIViewController *verifyVC = [self verifyVCWithVC:vc];
+    if(verifyVC){
+        vc = verifyVC;
     }
     return vc;
 }
@@ -75,41 +78,83 @@ _Pragma("clang diagnostic pop") \
     }else{
         params = [paramsMuDic mutableCopy];
     }
+    
     //带上标识
     [params setObject:vcName forKey:@"RouterKey"];
     
-    //方法实现判空
     SEL paramsSelector = NSSelectorFromString(paramsSelectorName);
     
-    //创建vc
-    UIViewController *vc;
+    UIViewController *vc = [NSClassFromString(vcName) alloc];
+    UIViewController *verifyVC = [self verifyVCWithVC:vc];
+    if(verifyVC){
+        vc = verifyVC;//replace vc with failVC
+        paramsSelector = NSSelectorFromString(_failSelectorName);
+        params = [_failParmas mutableCopy];
+        isCustomInitMethod = _isFailCustomInitMethod;
+    }
+    
     if(isCustomInitMethod){
-        vc = [NSClassFromString(vcName) alloc];
-        
-        if(!vc){
-            NSLog(@"找不到该类，请检查类名！");
-            if(self.failVC){
-                return self.failVC;
-            }
-            return self.defaultFailVC;
-        }
-        
         if(![vc respondsToSelector:paramsSelector]){
             NSLog(@"找不到该参数方法，请检查方法名！");
             return [vc init];
         }
-        SuppressPerformSelectorLeakWarning([vc performSelector:paramsSelector withObject:params]);
     }else{
-        vc = [self creatVCWithName:vcName];
+        vc = [vc init];
         if(![vc respondsToSelector:paramsSelector]){
             NSLog(@"找不到该参数方法，请检查方法名！");
             return vc;
         }
-        SuppressPerformSelectorLeakWarning([vc performSelector:paramsSelector withObject:params]);
     }
+    SuppressPerformSelectorLeakWarning([vc performSelector:paramsSelector withObject:params]);
     
     return vc;
 }
+
+- (void)creatFailVCWithName:(NSString *)failVCName
+           failSelectorName:(NSString * __nullable)failSelectorName
+                 failParams:(NSDictionary * __nullable)failParams
+         isCustomInitMethod:(BOOL)isFailCustomInitMethod{
+    _failVC = failVCName;
+    _failSelectorName = failSelectorName;
+    _failParmas = failParams;
+    _isFailCustomInitMethod = isFailCustomInitMethod;
+}
+
+- (UIViewController * __nullable)verifyVCWithVC:(UIViewController * __nullable)vc{
+    if(!vc){
+        NSLog(@"找不到该类，请检查类名！");
+        if(![self _stringNull:self.failVC]){
+            UIViewController *vc = [NSClassFromString(self.failVC) new];
+            if(vc){
+                return vc;
+            }
+        }
+        return self.defaultFailVC;
+    }
+    return nil;
+}
+
+- (void)resetFailVC{
+    _failVC = nil;
+    _failSelectorName = nil;
+    _failParmas = nil;
+    _isFailCustomInitMethod = NO;
+}
+
+#pragma mark - private method
+
+//判断字符串 str 是否为空
+- (BOOL)_stringNull:(NSString *)str {
+    if ([str isKindOfClass:[NSNull class]]){
+        return YES;
+    }
+    if (!([str description].length > 0) || str == nil || [str isEqual:@""]) {
+        return YES;
+    }
+    return NO;
+}
+
+#pragma mark - lazy
 
 - (CJJRouterFailVC *)defaultFailVC{
     if(!_defaultFailVC){

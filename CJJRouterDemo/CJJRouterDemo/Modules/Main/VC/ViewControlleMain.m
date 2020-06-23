@@ -55,11 +55,11 @@
     }else if (indexPath.row == 4){
         [self.navigationController pushViewController:CJJRouterCreatParamsVC(@"ViewControllerFive", @{@"name":@"我是一个带参数的控制器（Custom InitMethod）"}, @"initWithCustomParams:", YES) animated:YES];
     }else if (indexPath.row == 5){
-        [CJJRouter sharedCJJRouter].failVC = nil;
+        [[CJJRouter sharedCJJRouter] resetFailVC];
         [self.navigationController pushViewController:CJJRouterCreatVC(@"unKnownVC") animated:YES];
     }else{
-        [CJJRouter sharedCJJRouter].failVC = CJJRouterCreatNormalParamsVC(@"ViewControllerCustomFailVC", @{@"name":@"我是一个不存在的控制器（自定义）"});
-        [self.navigationController pushViewController:CJJRouterCreatVC(@"unKnownVC") animated:YES];
+        [[CJJRouter sharedCJJRouter] creatFailVCWithName:@"ViewControllerCustomFailVC" failSelectorName:@"setWithParams:" failParams:@{@"name":@"我是一个不存在的控制器（自定义）"} isCustomInitMethod:NO];
+        [self.navigationController pushViewController:CJJRouterCreatInitParamsVC(@"unKnownVC",@{}) animated:YES];
     }
 }
 
