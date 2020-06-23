@@ -71,13 +71,8 @@ _Pragma("clang diagnostic pop") \
                                params:(NSDictionary *)paramsMuDic
                    paramsSelectorName:(NSString * )paramsSelectorName
                    isCustomInitMethod:(BOOL)isCustomInitMethod{
-    //参数列表判空
-    NSMutableDictionary *params;
-    if(!paramsMuDic){
-        params = [NSMutableDictionary dictionary];
-    }else{
-        params = [paramsMuDic mutableCopy];
-    }
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:paramsMuDic];
     
     //带上标识
     [params setObject:vcName forKey:@"RouterKey"];
@@ -123,7 +118,7 @@ _Pragma("clang diagnostic pop") \
 - (UIViewController * __nullable)verifyVCWithVC:(UIViewController * __nullable)vc{
     if(!vc){
         NSLog(@"找不到该类，请检查类名！");
-        if(![self _stringNull:self.failVC]){
+        if(![self p_stringNull:self.failVC]){
             UIViewController *vc = [NSClassFromString(self.failVC) new];
             if(vc){
                 return vc;
@@ -144,7 +139,7 @@ _Pragma("clang diagnostic pop") \
 #pragma mark - private method
 
 //判断字符串 str 是否为空
-- (BOOL)_stringNull:(NSString *)str {
+- (BOOL)p_stringNull:(NSString *)str {
     if ([str isKindOfClass:[NSNull class]]){
         return YES;
     }
