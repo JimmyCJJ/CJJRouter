@@ -52,7 +52,7 @@ _Pragma("clang diagnostic pop") \
     UIViewController *vc = [NSClassFromString(vcName) new];
     UIViewController *verifyVC = [self verifyVCWithVC:vc];
     if(verifyVC){
-        vc = verifyVC;
+        vc = [verifyVC init];
     }
     return vc;
 }
@@ -119,7 +119,7 @@ _Pragma("clang diagnostic pop") \
     if(!vc){
         NSLog(@"找不到该类，请检查类名！");
         if(![self p_stringNull:self.failVC]){
-            UIViewController *vc = [NSClassFromString(self.failVC) new];
+            UIViewController *vc = [NSClassFromString(self.failVC) alloc];
             if(vc){
                 return vc;
             }
@@ -153,7 +153,7 @@ _Pragma("clang diagnostic pop") \
 
 - (CJJRouterFailVC *)defaultFailVC{
     if(!_defaultFailVC){
-        _defaultFailVC = [CJJRouterFailVC new];
+        _defaultFailVC = [CJJRouterFailVC alloc];
     }
     return _defaultFailVC;
 }
