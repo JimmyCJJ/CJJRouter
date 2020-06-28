@@ -72,7 +72,7 @@ _Pragma("clang diagnostic pop") \
                    paramsSelectorName:(NSString * )paramsSelectorName
                    isCustomInitMethod:(BOOL)isCustomInitMethod{
     
-    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:paramsMuDic];
+    NSMutableDictionary *params = [paramsMuDic mutableCopy];
     
     //带上标识
     [params setObject:vcName forKey:@"RouterKey"];

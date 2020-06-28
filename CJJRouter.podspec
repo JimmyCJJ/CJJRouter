@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name 			= 'CJJRouter'
-s.version 		= '1.0.7'
+s.version 		= '1.0.8'
 s.license		= { :type => 'MIT'}
 s.summary		= 'CJJRouter实现了一句代码跳转任意控制器（可传参数），不需要再引用头文件，减少耦合和依赖'	
 s.description 		= 'CJJRouter is a tool to achieve pushing by one line of code.'
