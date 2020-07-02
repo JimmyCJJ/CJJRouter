@@ -20,7 +20,7 @@
 
 #pragma mark - life cycle
 
-- (instancetype)initWithCustomParams:(NSMutableDictionary *)params{
+- (instancetype)initWithCustomParams:(NSDictionary *)params{
     self = [super init];
     if (self) {
         self.name = [params objectForKey:@"name"];

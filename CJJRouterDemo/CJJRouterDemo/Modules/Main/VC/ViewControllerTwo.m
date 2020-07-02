@@ -20,7 +20,7 @@
 
 #pragma mark - life cycle
 
-- (void)setWithParams:(NSMutableDictionary *)params{
+- (void)setWithParams:(NSDictionary *)params{
     self.name = [params objectForKey:@"name"];
 }
 
