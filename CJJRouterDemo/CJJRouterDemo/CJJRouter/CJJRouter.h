@@ -31,6 +31,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CJJRouter : NSObject
 
+- (instancetype)init NS_UNAVAILABLE;
+- (instancetype)initWithFrame:(CGRect)frame NS_UNAVAILABLE;
++ (instancetype)new NS_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder *)coder NS_UNAVAILABLE;
+
 /// 单例类方法
 + (CJJRouter *)sharedCJJRouter;
 

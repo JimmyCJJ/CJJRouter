@@ -12,7 +12,6 @@
 //
 
 #import "CJJRouter.h"
-#import "CJJRouterFailVC.h"
 
 //ignore selector unknown warning
 #define SuppressPerformSelectorLeakWarning(Stuff) \
@@ -24,7 +23,7 @@ _Pragma("clang diagnostic pop") \
 } while (0)
 
 @interface CJJRouter ()
-@property (nonatomic,strong) CJJRouterFailVC *defaultFailVC;
+@property (nonatomic,strong) UIViewController *defaultFailVC;
 
 @property (nonatomic,copy,nullable) NSString *failVC;
 @property (nonatomic,copy,nullable) NSDictionary *failParmas;
@@ -151,9 +150,11 @@ _Pragma("clang diagnostic pop") \
 
 #pragma mark - lazy
 
-- (CJJRouterFailVC *)defaultFailVC{
+- (UIViewController *)defaultFailVC{
     if(!_defaultFailVC){
-        _defaultFailVC = [CJJRouterFailVC alloc];
+        _defaultFailVC = [UIViewController alloc];
+        _defaultFailVC.navigationItem.title = @"访问出错了...";
+        _defaultFailVC.view.backgroundColor = [UIColor whiteColor];
     }
     return _defaultFailVC;
 }
